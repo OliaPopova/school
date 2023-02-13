@@ -12,6 +12,7 @@ def start():
         if op == 1:
             name = view.input_student()
             if name not in name_list:
+                name_list.append(name)
                 main_dict[name] = {}
                 for lesson in lesson_list:
                     main_dict[name][lesson] = []
